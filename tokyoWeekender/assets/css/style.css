@@ -1,0 +1,761 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.header-top {
+  width: 100%;
+  height: var(--header-height);
+  background-color: var(--black-color);
+}
+
+.header__container {
+  height: 100%;
+  padding: 0 30px 0 60px;
+  display: flex;
+  align-items: center;
+}
+
+.header__container--left {
+}
+
+.header--left-menu {
+  margin-right: 9px;
+  position: relative;
+}
+
+.header--left-icon-link {
+  color: var(--white-color);
+  font-size: 2rem;
+  transition: all linear 0.2s;
+  cursor: pointer;
+}
+
+.header--left-social {
+}
+
+.header--left-social-icon {
+  margin: 0 9px;
+}
+
+.header--left-social .header--left-icon-link:hover {
+  transform: scale(1.2);
+}
+
+/* menu on header */
+#menu-checkbox:checked ~ .menu {
+  display: block;
+}
+
+.menu {
+  position: fixed;
+  top: var(--header-height);
+  width: 250px;
+  left: 0;
+  background-color: var(--black-color);
+  height: calc(100vh - var(--header-height));
+  overflow: auto;
+  animation: fadeDown linear 0.2s;
+  z-index: 3;
+  display: none;
+}
+
+@keyframes fadeDown {
+  from {
+    height: 0;
+  }
+  to {
+    height: calc(100vh - var(--header-height));
+  }
+}
+
+.menu::-webkit-scrollbar {
+  display: none;
+}
+
+.menu-exit {
+  position: absolute;
+  top: 4px;
+  right: 8px;
+}
+
+.menu-exit-icon {
+  color: var(--white-color);
+  font-size: 2.2rem;
+  padding: 8px;
+}
+
+.menu-wrap {
+  padding: 0 38px 40px;
+}
+
+.menu-list {
+  margin-bottom: 4px;
+  padding-left: 0;
+  list-style-type: none;
+  color: var(--white-color);
+  font-size: 1.6rem;
+  line-height: 3rem;
+  font-weight: 500;
+}
+
+.menu-item-heading {
+  transition: all linear 0.3s;
+  transform-origin: center;
+}
+
+.menu-item {
+  padding-left: 15px;
+  transition: all linear 0.3s;
+  transform-origin: center;
+}
+
+.menu-item-heading:hover,
+.menu-item:hover {
+  transform: scale(1.05);
+}
+
+.social-on-mobile {
+  flex-wrap: wrap;
+  display: flex;
+  padding: 0 38px;
+  margin-bottom: 45px;
+}
+
+.social-on-mobile-icon-wrap {
+  flex-basis: 33.333%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-on-mobile-icon {
+  font-size: 2rem;
+  color: var(--white-color);
+  margin-bottom: 15px;
+  transition: all linear 0.3s;
+  transform-origin: center;
+}
+
+.social-on-mobile-icon:hover {
+  transform: scale(1.05);
+}
+
+/* header logo */
+.header__container--mid {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.header__container--mid-logo {
+  height: 42px;
+  cursor: pointer;
+}
+
+/* header search */
+
+.search-on-mobile-tablet {
+  font-size: 2.4rem;
+  color: var(--white-color);
+  cursor: pointer;
+}
+
+.header-right-search {
+  position: relative;
+  height: 45px;
+  width: 260px;
+  line-height: 2rem;
+  border: 1px solid var(--white-color);
+}
+
+.header-right-input {
+  background-color: transparent;
+  width: 50%;
+  height: 100%;
+  outline: none;
+  border: none;
+  color: var(--white-color);
+  font-size: 1.6rem;
+  margin-left: 24px;
+}
+
+.header-right-input:focus ~ .history {
+  display: block;
+}
+
+.history {
+  top: 103%;
+  position: absolute;
+  background-color: var(--black-color);
+  width: 100%;
+  z-index: 4;
+  display: none;
+}
+
+.history-list {
+  margin: 16px 24px;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.history-item {
+  font-size: 1.4rem;
+  line-height: 2.8rem;
+  color: var(--white-color);
+}
+
+.header-right-icon {
+  color: var(--white-color);
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  height: 100%;
+  padding: 0 8px;
+}
+
+.header-right-icon-link {
+  font-size: 2.4rem;
+  display: inline-block;
+}
+
+.header-right-icon-text {
+  font-size: 1.3rem;
+  margin: 0 8px;
+}
+
+/* header bottom */
+.header-bottom-wrap {
+  height: 55px;
+  background-color: var(--white-color);
+}
+
+.header-bottom {
+  background-image: url("https://www.tokyoweekender.com/wp-content/themes/thevoux-wp/assets/img/bg__stripe__small.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 55px;
+}
+
+.header-bottom-container {
+  height: 100%;
+  margin: 0;
+}
+
+.header-bottom-list {
+  height: 100%;
+  list-style-type: none;
+  margin: 0 12px;
+  padding-left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.header-bottom-item {
+  flex-basis: 11%;
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  background-color: var(--white-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.header-bottom-item-heading {
+  flex: 1;
+  text-align: center;
+  transition: all linear 0.3s;
+}
+
+.header-bottom-item :not(:last-child) {
+  margin-right: 1.5%;
+}
+
+.header-bottom-item:hover .header-bottom-item-heading {
+  background-color: #000;
+  color: var(--white-color);
+}
+
+/* header bottom subnav */
+.header-bottom-item:hover .header-bottom-subnav-list {
+  display: block;
+}
+
+.header-bottom-subnav-list {
+  position: absolute;
+  list-style-type: none;
+  width: 100%;
+  top: 100%;
+  padding-left: 0;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.486);
+  background-color: var(--white-color);
+  display: none;
+}
+
+.header-bottom-subnav-item {
+  color: #000;
+  font-size: 1rem;
+  line-height: 2rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all linear 0.3s;
+}
+
+.header-bottom-subnav-item:hover {
+  background-color: #000;
+  color: var(--white-color);
+}
+
+/* body */
+.body {
+  width: 100%;
+  display: flex;
+}
+
+/* body left */
+
+.body-left {
+  width: 15%;
+  background-color: var(--black-color);
+
+  position: fixed;
+  top: var(--header-height-full);
+  height: 100%;
+  left: 0;
+  z-index: 0;
+}
+
+.body-left-wrap {
+  width: 100%;
+  padding-right: 18px;
+  position: relative;
+}
+
+.body-left-top {
+  text-align: right;
+  position: absolute;
+  top: 28px;
+  right: 18px;
+}
+
+.body-left-top-1 {
+  text-decoration: none;
+  color: var(--white-color);
+  font-size: 2.6rem;
+}
+
+.body-left-top-2 {
+  text-decoration: none;
+  color: var(--white-color);
+  font-size: 1.4rem;
+  line-height: 2rem;
+
+  display: block;
+}
+
+.body-left-top a:nth-child(2) {
+  margin-top: 16px;
+}
+
+.body-left-bottom {
+  position: absolute;
+  top: 240px;
+  right: 18px;
+  font-size: 1.4rem;
+  text-align: right;
+}
+
+.body-left-bottom-content {
+  color: var(--white-color);
+}
+
+/* body right */
+
+.body-right {
+  width: 15%;
+  background-color: var(--black-color);
+  position: relative;
+  position: fixed;
+  top: var(--header-height-full);
+  height: 100%;
+  right: 0;
+  z-index: 0;
+}
+
+.body-right-wrap {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 250px;
+  left: 18px;
+}
+
+.body-right-wrap i {
+  color: var(--white-color);
+  font-size: 1.8rem;
+  margin: 8px 0;
+}
+
+.icon-social {
+  cursor: pointer;
+  transition: all linear 0.3s;
+}
+
+.icon-social:hover {
+  transform: scale(1.1);
+}
+
+/* body mid */
+
+.body-mid {
+  flex: 1;
+  padding: var(--header-height-full) 15% 0;
+
+  background-color: var(--white-color);
+}
+
+.mid__heading-content {
+  width: 100%;
+  margin: 20px 6px;
+}
+
+.mid__heading-content-icon {
+  padding: 0 6px;
+}
+
+/* mid img */
+.mid__img {
+  margin-bottom: 20px;
+}
+
+.mid__img-link {
+  width: 100%;
+}
+
+.body-heading-wrap {
+  background-image: url("https://www.tokyoweekender.com/wp-content/themes/thevoux-wp/assets/img/footer/bg-stripe.svg");
+  width: 100%;
+  height: 300px;
+}
+
+.body-heading {
+  margin: 0 40px;
+  position: relative;
+}
+
+.body-heading-top {
+  color: var(--black-color);
+  margin-top: 18px;
+  display: inline-block;
+  background-color: var(--white-color);
+  font-size: 1.4rem;
+  font-weight: 500;
+  cursor: pointer;
+  line-height: 2.4rem;
+}
+
+.body-heading-top-text {
+  display: inline-block;
+  transition: all linear 0.3s;
+}
+.body-heading-top-text:hover {
+  transform: scale(1.05);
+}
+
+.body-heading-mid {
+  margin-top: 10px;
+  font-size: 4.4rem;
+  font-weight: 600;
+  background-color: var(--white-color);
+  color: var(--black-color);
+  cursor: pointer;
+}
+
+.body-heading-bottom {
+  background-color: var(--white-color);
+  font-size: 2rem;
+  margin-top: 10px;
+  font-weight: 500;
+  color: var(--black-color);
+}
+
+.body-heading-author {
+  position: absolute;
+  bottom: -115px;
+}
+
+.author-img img {
+  width: 54px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.author-name {
+  font-size: 1.6rem;
+  color: rgb(146, 146, 146);
+  line-height: 3rem;
+  cursor: pointer;
+}
+
+.content {
+  margin: 0 40px;
+}
+
+.author-text {
+  margin-top: 116px;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+
+.author-text a {
+  color: var(--black-color);
+  font-weight: 500;
+  display: inline-block;
+  transition: all linear 0.3s;
+}
+
+.author-text a:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+.author-text-mid {
+  margin: 30px 0;
+}
+
+.author-text-img {
+  margin-top: 70px;
+  margin-bottom: 54px;
+}
+
+.author-text-img img {
+  width: 100%;
+}
+
+.ticket {
+  margin-bottom: 56px;
+}
+
+.ticket-heading {
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.ticket-heading-number {
+}
+
+.ticket-heading-text {
+  color: var(--black-color);
+  transition: all linear 0.3s;
+  display: inline-block;
+}
+
+.ticket-heading-text:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+.ticket-content {
+  font-size: 1.6rem;
+  margin: 30px 0;
+}
+
+.ticket-price {
+  font-size: 1.6rem;
+  font-style: italic;
+}
+
+/* pick */
+.pick {
+  background-image: url("https://www.tokyoweekender.com/wp-content/themes/thevoux-wp/assets/img/footer/bg-stripe.svg");
+  background-repeat: no-repeat;
+  padding: 37px 0 46px;
+  min-height: 472px;
+  width: 100%;
+  margin-bottom: 46px;
+}
+
+.pick-top {
+  padding: 0 16px;
+  font-size: 3rem;
+  font-weight: 500;
+  background-color: var(--white-color);
+  margin-bottom: 34px;
+  display: inline-block;
+  line-height: 4rem;
+  color: var(--black-color);
+}
+
+.pick-img {
+  cursor: pointer;
+  position: relative;
+}
+
+.pick-img img {
+  width: 100%;
+}
+
+.pick-img:hover .modal {
+  display: block;
+}
+
+.modal {
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+  background-color: var(--black-color);
+  display: none;
+  animation: growth linear 0.4s;
+}
+
+@keyframes growth {
+  from {
+    height: 0;
+  }
+  to {
+    height: 100%;
+  }
+}
+
+.pick-mid {
+  padding: 0 16px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  background-color: var(--white-color);
+  display: inline-block;
+  line-height: 2.6rem;
+  margin: 8px 0;
+}
+
+.pick-mid-text {
+  cursor: pointer;
+  display: inline-block;
+  transition: all linear 0.3s;
+}
+
+.pick-mid-text:hover {
+  transform: scale(1.05);
+}
+
+.pick-bottom {
+  background-color: var(--white-color);
+  line-height: 3rem;
+  margin-bottom: 16px;
+}
+
+.pick-bottom-text {
+  font-size: 1.8rem;
+  font-weight: 500;
+  padding: 0 16px;
+  cursor: pointer;
+}
+
+.pick-bottom-author {
+  font-size: 1.6rem;
+  padding: 0 16px;
+  cursor: pointer;
+  color: rgb(122, 122, 122);
+}
+
+/* footer */
+.footer-container {
+  width: 100%;
+  /* height: 450px; */
+  position: relative;
+  background-color: var(--white-color);
+  z-index: 1;
+}
+.footer {
+  background-image: url("	https://www.tokyoweekender.com/wp-content/themes/thevoux-wp/assets/img/footer/bg-stripe.svg");
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+.footer-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 40px;
+}
+
+.footer-logo {
+  margin-top: 40px;
+}
+
+.footer-logo img {
+  width: 62px;
+}
+
+.footer-connect {
+  font-size: 2.2rem;
+  line-height: 4rem;
+  background-color: var(--white-color);
+  padding: 0 16px;
+  margin-top: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-icon {
+  background-color: var(--white-color);
+  padding: 0 16px;
+}
+
+.footer-icon i {
+  font-size: 2rem;
+  margin: 0 8px;
+  line-height: 3rem;
+}
+
+.footer-copyright {
+  margin-top: 20px;
+  font-size: 1.4rem;
+  text-align: center;
+  line-height: 3rem;
+  background-color: var(--white-color);
+  margin-bottom: 20px;
+  padding: 0 16px;
+}
+
+.footer-company {
+  font-size: 1.4rem;
+  margin-bottom: 40px;
+  line-height: 3rem;
+  background-color: var(--white-color);
+  padding: 0 16px;
+}
+
+.footer-bottom {
+  width: 100%;
+  background-color: var(--black-color);
+}
+
+.footer-bottom-container {
+  padding: 46px 32px;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-bottom-text {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--white-color);
+  margin: 8px 16px;
+}

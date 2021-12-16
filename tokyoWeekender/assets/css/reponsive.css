@@ -1,0 +1,172 @@
+@media (min-width: 1024px) {
+  .hide-on-pc {
+    display: none;
+  }
+}
+
+/* tablet pc */
+@media (min-width: 740px) {
+  .hide-on-tablet-pc {
+    display: none;
+  }
+}
+
+/* tablet and mobile */
+@media (max-width: 1023px) {
+  .hide-on-mobile-tablet {
+    display: none;
+  }
+
+  .body,
+  .body-left,
+  .body-right {
+    margin-top: -56px;
+  }
+
+  .header-right-search {
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: var(--black-color);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.527);
+  }
+
+  .search-btn-exit {
+    position: absolute;
+    color: var(--white-color);
+    background-color: red;
+    height: 100%;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .search-btn-exit i {
+    font-size: 2rem;
+    padding: 0 12px;
+  }
+
+  .header-right-input {
+    margin-left: 48px;
+    width: 70%;
+  }
+
+  #search-on-mobile-tablet-input:checked ~ .header-right-search {
+    display: block;
+  }
+
+  .body-left-top {
+    top: 70px;
+  }
+
+  .body-left-top-1 {
+    font-size: 1.8rem;
+  }
+
+  .body-left-top-2 {
+    font-size: 1rem;
+  }
+
+  .body-left-bottom {
+    top: 700px;
+    font-size: 1rem;
+  }
+
+  .body-right-wrap {
+    top: 700px;
+  }
+
+  .body-right-wrap i {
+    font-size: 1.8rem;
+  }
+
+  .header__container {
+    padding: 0 20px;
+  }
+
+  .header-logo-on-mobile-tablet {
+    width: 50px;
+    cursor: pointer;
+    height: 50px;
+  }
+
+  .body {
+    overflow: hidden;
+  }
+
+  .header-right-icon {
+    background-color: greenyellow;
+  }
+
+  .history-item {
+    margin-left: 24px;
+  }
+}
+
+/* mobile */
+@media (max-width: 739px) {
+  :root {
+    --header-height: 54px;
+  }
+
+  .hide-on-mobile {
+    display: none;
+  }
+  .footer-logo img {
+    width: 110px;
+  }
+
+  .footer-connect {
+    font-size: 3.2rem;
+    line-height: 4.2rem;
+  }
+
+  .footer-icon i {
+    font-size: 2.6rem;
+    line-height: 3.8rem;
+  }
+  .footer-company,
+  .footer-copyright {
+    font-size: 2.2rem;
+    line-height: 3.6rem;
+  }
+
+  .footer-bottom-text {
+    font-size: 1.8rem;
+  }
+
+  .body-mid {
+    padding: var(--header-height-full) 0 0;
+  }
+
+  .body,
+  .body-left,
+  .body-right {
+    margin-top: -103px;
+  }
+
+  .body-heading-mid {
+    font-size: 2.4rem;
+  }
+
+  .body-heading-author {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+
+  .author-name {
+    margin-bottom: 16px;
+    background-color: var(--white-color);
+    padding: 0 16px;
+    min-width: 160px;
+  }
+
+  .body-heading-author {
+    transform: translateX(-50%);
+    left: 50%;
+  }
+}

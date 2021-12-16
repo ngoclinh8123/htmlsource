@@ -1,0 +1,18 @@
+:root {
+  --black-color: #272525;
+  --white-color: #fff;
+
+  --header-height: 100px;
+  --header-height-full: 155px;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  line-height: 1.6rem;
+}

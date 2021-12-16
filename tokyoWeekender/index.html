@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/grid.css" />
+    <link rel="stylesheet" href="./assets/css/reponsive.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/fonts/fontawesome-free-5.15.4-web/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//fonts.googleapis.com/css?family=Pacifico"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="header">
+        <div class="header-top">
+          <div class="header__container">
+            <div class="header__container--left">
+              <label for="menu-checkbox" class="header--left-menu">
+                <i class="header--left-icon-link fas fa-bars"></i>
+              </label>
+              <input type="checkbox" hidden id="menu-checkbox" />
+              <div class="menu">
+                <label for="menu-checkbox" class="menu-exit">
+                  <i class="fas fa-times menu-exit-icon"></i>
+                </label>
+                <div class="menu-wrap">
+                  <ul class="menu-list">
+                    <div class="menu-item-heading">TOKYO LIFE</div>
+                    <li class="menu-item">Neighborhoods</li>
+                    <li class="menu-item">New & Option</li>
+                    <li class="menu-item">Guides & Insights</li>
+                    <li class="menu-item">Health & Nutrition</li>
+                    <li class="menu-item">School & Education</li>
+                  </ul>
+                  <ul class="menu-list">
+                    <div class="menu-item-heading">ART & CULTURE</div>
+                  </ul>
+                  <ul class="menu-list">
+                    <div class="menu-item-heading">TRAVEL</div>
+                    <li class="menu-item">Region</li>
+                    <li class="menu-item">Transport Guides</li>
+                    <li class="menu-item">Seasonal</li>
+                    <li class="menu-item">Prefecture Spotlight</li>
+                  </ul>
+                  <ul class="menu-list">
+                    <div class="menu-item-heading">FOOD & DRINK</div>
+                    <li class="menu-item">Restaurants & Bars</li>
+                    <li class="menu-item">Recipes</li>
+                  </ul>
+                  <ul class="menu-list">
+                    <div class="menu-item-heading">EVENT</div>
+                  </ul>
+                  <ul class="menu-list">
+                    <div class="menu-item-heading">COMMUNITY</div>
+                    <li class="menu-item">TW Impact</li>
+                    <li class="menu-item">TW Social</li>
+                    <li class="menu-item">TW Insider's Club</li>
+                    <li class="menu-item">TW Creatives</li>
+                    <li class="menu-item">TW Together</li>
+                  </ul>
+                  <ul class="menu-list">
+                    <div class="menu-item-heading">THE CONCIERGE</div>
+                    <li class="menu-item">TW</li>
+                    <li class="menu-item">GIFT GUIDE</li>
+                  </ul>
+                  <ul class="menu-list">
+                    <div class="menu-item-heading">MAGAZINE</div>
+                    <li class="menu-item">Read the latest issue</li>
+                    <li class="menu-item">Achives</li>
+                    <li class="menu-item">Advertise</li>
+                    <li class="menu-item">Pick Up a Copy</li>
+                    <li class="menu-item">Subscribe</li>
+                  </ul>
+                </div>
+
+                <div class="social-on-mobile hide-on-pc">
+                  <span class="social-on-mobile-icon-wrap">
+                    <i class="social-on-mobile-icon fab fa-facebook"></i>
+                  </span>
+                  <span class="social-on-mobile-icon-wrap">
+                    <i class="social-on-mobile-icon fab fa-twitter"></i>
+                  </span>
+                  <span class="social-on-mobile-icon-wrap">
+                    <i class="social-on-mobile-icon fab fa-instagram"></i>
+                  </span>
+                  <span class="social-on-mobile-icon-wrap">
+                    <i class="social-on-mobile-icon fab fa-linkedin-in"></i>
+                  </span>
+                  <span class="social-on-mobile-icon-wrap">
+                    <i class="social-on-mobile-icon fab fa-pinterest"></i>
+                  </span>
+                  <span class="social-on-mobile-icon-wrap">
+                    <i class="social-on-mobile-icon fab fa-youtube"></i>
+                  </span>
+                </div>
+              </div>
+              <span class="header--left-social hide-on-mobile-tablet">
+                <span class="header--left-social-icon">
+                  <i class="header--left-icon-link fab fa-facebook"></i>
+                </span>
+                <span class="header--left-social-icon">
+                  <i class="header--left-icon-link fab fa-twitter"></i>
+                </span>
+                <span class="header--left-social-icon">
+                  <i class="header--left-icon-link fab fa-instagram"></i>
+                </span>
+                <span class="header--left-social-icon">
+                  <i class="header--left-icon-link fab fa-linkedin-in"></i>
+                </span>
+                <span class="header--left-social-icon">
+                  <i class="header--left-icon-link fab fa-pinterest"></i>
+                </span>
+                <span class="header--left-social-icon">
+                  <i class="header--left-icon-link fab fa-youtube"></i>
+                </span>
+              </span>
+            </div>
+            <div class="header__container--mid">
+              <img
+                src="https://www.tokyoweekender.com/wp-content/themes/thevoux-wp/assets/img/tw__logo.png"
+                alt="logo"
+                class="header__container--mid-logo hide-on-mobile"
+              />
+              <img
+                src="https://www.tokyoweekender.com/wp-content/themes/thevoux-wp/assets/img/tw__logo__sp.png"
+                alt=""
+                class="header-logo-on-mobile-tablet hide-on-tablet-pc"
+              />
+            </div>
+            <div class="header__container--right">
+              <label
+                for="search-on-mobile-tablet-input"
+                class="search-on-mobile-tablet hide-on-pc"
+              >
+                <i class="fas fa-search"></i>
+              </label>
+              <input
+                type="checkbox"
+                hidden
+                name=""
+                id="search-on-mobile-tablet-input"
+              />
+              <div class="header-right-search hide-on-mobile-tablet">
+                <label
+                  for="search-on-mobile-tablet-input"
+                  class="search-btn-exit hide-on-tablet-pc"
+                >
+                  <i class="fas fa-times"></i>
+                </label>
+                <input type="text" name="" id="" class="header-right-input" />
+                <div class="history">
+                  <ul class="history-list">
+                    <li class="history-item">hokkaido flower</li>
+                    <li class="history-item">kansai</li>
+                    <li class="history-item">tokyo food</li>
+                    <li class="history-item">nagasaki</li>
+                  </ul>
+                </div>
+                <div class="header-right-icon">
+                  <i class="fas fa-search header-right-icon-link"></i>
+                  <span class="header-right-icon-text">SEARCH</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header-bottom-wrap hide-on-mobile-tablet">
+          <div class="header-bottom">
+            <div class="header-bottom-container">
+              <ul class="header-bottom-list">
+                <li class="header-bottom-item">
+                  <span class="header-bottom-item-heading"> TOKYO LIFE </span>
+                  <ul class="header-bottom-subnav-list">
+                    <li class="header-bottom-subnav-item">Neiborhoods</li>
+                    <li class="header-bottom-subnav-item">New & Opinion</li>
+                    <li class="header-bottom-subnav-item">Guides & Insights</li>
+                    <li class="header-bottom-subnav-item">
+                      Health & Nutrition
+                    </li>
+                    <li class="header-bottom-subnav-item">
+                      Schools & Education
+                    </li>
+                  </ul>
+                </li>
+                <li class="header-bottom-item">
+                  <span class="header-bottom-item-heading">ART & CULTURE</span>
+                </li>
+                <li class="header-bottom-item">
+                  <span class="header-bottom-item-heading"> TRAVEL </span>
+                  <ul class="header-bottom-subnav-list">
+                    <li class="header-bottom-subnav-item">Regions</li>
+                    <li class="header-bottom-subnav-item">Transport Guides</li>
+                    <li class="header-bottom-subnav-item">Resonal</li>
+                    <li class="header-bottom-subnav-item">
+                      Prefecture Spotlight
+                    </li>
+                  </ul>
+                </li>
+                <li class="header-bottom-item">
+                  <span class="header-bottom-item-heading">FOOD & DRINK</span>
+                  <ul class="header-bottom-subnav-list">
+                    <li class="header-bottom-subnav-item">Restaurants & Bar</li>
+                    <li class="header-bottom-subnav-item">Recipes</li>
+                  </ul>
+                </li>
+                <li class="header-bottom-item">
+                  <span class="header-bottom-item-heading">EVENTS</span>
+                </li>
+                <li class="header-bottom-item">
+                  <span class="header-bottom-item-heading">COMMUNITY</span>
+                  <ul class="header-bottom-subnav-list">
+                    <li class="header-bottom-subnav-item">TW Impact</li>
+                    <li class="header-bottom-subnav-item">TW Social</li>
+                    <li class="header-bottom-subnav-item">TW Insider's Club</li>
+                    <li class="header-bottom-subnav-item">TW Creative</li>
+                    <li class="header-bottom-subnav-item">TW Together</li>
+                  </ul>
+                </li>
+                <li class="header-bottom-item">
+                  <span class="header-bottom-item-heading">THE CONCIERGE</span>
+                  <ul class="header-bottom-subnav-list">
+                    <li class="header-bottom-subnav-item">TW</li>
+                    <li class="header-bottom-subnav-item">GIFT GUIDE</li>
+                  </ul>
+                </li>
+                <li class="header-bottom-item">
+                  <span class="header-bottom-item-heading">MAGAZINE</span>
+                  <ul class="header-bottom-subnav-list">
+                    <li class="header-bottom-subnav-item">
+                      Read the latest issue
+                    </li>
+                    <li class="header-bottom-subnav-item">Archives</li>
+                    <li class="header-bottom-subnav-item">Advertise</li>
+                    <li class="header-bottom-subnav-item">Pick Up a Copy</li>
+                    <li class="header-bottom-subnav-item">Subcribe</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- body -->
+      <div class="body">
+        <div class="body-left hide-on-mobile">
+          <div class="body-left-wrap">
+            <div class="body-left-top">
+              <a href="" class="body-left-top-1">Guides & Insights</a>
+              <a href="" class="body-left-top-2">Travel</a>
+              <a href="" class="body-left-top-2">TW Collabs</a>
+            </div>
+            <div class="body-left-bottom">
+              <p class="body-left-bottom-content">Published</p>
+              <p class="body-left-bottom-content">December 07, 2021</p>
+            </div>
+          </div>
+        </div>
+        <div class="body-mid">
+          <div class="mid__heading">
+            <div class="mid__heading-content">
+              <span class="mid__heading-content-text">TOP</span>
+              <i class="fas fa-chevron-right mid__heading-content-icon"></i>
+              <span class="mid__heading-content-text">Travel</span>
+              <i class="fas fa-chevron-right mid__heading-content-icon"></i>
+              <span class="mid__heading-content-text"
+                >Ticking Off Your Japan Travel Bucket List Through Japan’s
+                Hometown Tax Program</span
+              >
+            </div>
+          </div>
+          <div class="mid__img">
+            <img
+              src="https://www.tokyoweekender.com/wp-content/uploads/2021/12/shutterstock_1337694851-1.jpg"
+              alt="japan"
+              class="mid__img-link"
+            />
+          </div>
+          <div class="body-wrap">
+            <div class="body-heading-wrap">
+              <div class="body-heading">
+                <div class="body-heading-top">
+                  <span class="body-heading-top-text">Guides & Insights</span>
+                  /
+                  <span class="body-heading-top-text">Travel</span>
+                  /
+                  <span class="body-heading-top-text">TW Collabs</span>
+                </div>
+                <div class="body-heading-mid">
+                  Ticking Off Your Japan Travel Bucket List Through Japan’s
+                  Hometown Tax Program
+                </div>
+                <div class="body-heading-bottom hide-on-mobile">
+                  Book travel vouchers, experiences and accommodation in
+                  exchange for a deduction on your Japanese taxes
+                </div>
+                <div class="body-heading-author">
+                  <div class="author-img">
+                    <img
+                      src="https://www.tokyoweekender.com/wp-content/uploads/2021/10/1K5A5955-280x281.jpg"
+                      alt="author"
+                    />
+                  </div>
+                  <div class="author-name">By Lisandra Moor</div>
+                </div>
+              </div>
+            </div>
+            <div class="content">
+              <div class="author-text">
+                <div class="author-text-top">
+                  With the end of the year just around the corner, taxpayers
+                  around Japan are filing their annual contributions to furusato
+                  nozei which is the name given to
+                  <a href="">Japan’s hometown tax program</a>
+                  . Many usually opt for seasonal produce hard to find in their
+                  cities or craft goods to decorate their homes, but did you
+                  know you can also use your donations to plan your next trip?
+                </div>
+                <div class="author-text-mid">
+                  In a collaboration with Japan Travel Bureau (JTB),
+                  <a href="">Furusato Choice</a>
+                  , one of the top websites to enroll in the program, now offers
+                  taxpayers a chance to book everything from luxurious stays at
+                  renowned ryokan to sightseeing train tickets.
+                </div>
+                <div class="author-text-bottom">
+                  In the spirit of hopefully traveling more in 2022, we’ve
+                  scoured the Furusato Choice website for the best destinations
+                  to inspire you to contribute to the revitalization of the
+                  Japanese countryside – and maybe even pop by for a quick
+                  visit.
+                </div>
+                <div class="author-text-img">
+                  <img
+                    src="https://www.tokyoweekender.com/wp-content/uploads/2021/12/shutterstock_504138502.jpg"
+                    alt="lake"
+                  />
+                </div>
+              </div>
+              <div class="ticket">
+                <div class="ticket-heading">
+                  <span class="ticket-heading-number">1.</span>
+                  <a href="" class="ticket-heading-text"
+                    >Take a camping trip in the woods of Furano, Hokkaido</a
+                  >
+                </div>
+                <div class="ticket-content">
+                  Hokkaido Prefecture is known for its nature, so camping is the
+                  best way to experience the wilds of the northernmost region of
+                  Japan. This package includes a small getaway in the forests of
+                  Furano. The two-day trip includes trailer camping, onsen
+                  bathing, river fishing and grilling, all with the guide of two
+                  locals with enviable vigor and passion for the outdoors.
+                </div>
+                <div class="ticket-price">From ¥150,000</div>
+              </div>
+              <div class="ticket">
+                <div class="ticket-heading">
+                  <span class="ticket-heading-number">2.</span>
+                  <a href="" class="ticket-heading-text"
+                    >Reconnect with nature through a guided tour in Hida,
+                    Gifu</a
+                  >
+                </div>
+                <div class="ticket-content">
+                  Gifu Prefecture is often forgotten when planning a trip to the
+                  Chubu region of Japan, but it has tons of activities to suit
+                  travelers. This guided tour of Hida, a rural city located in
+                  northern Gifu, has everything from hiking through the
+                  Ikegahara Marsh to tasting local delicacies, all accompanied
+                  by helpful and friendly guides. Travelers with dietary
+                  restrictions are welcome, though they are asked to notify the
+                  guides ahead of the trip
+                </div>
+                <div class="ticket-price">From ¥105,000</div>
+              </div>
+              <div class="ticket">
+                <div class="ticket-heading">
+                  <span class="ticket-heading-number">3.</span>
+                  <a href="" class="ticket-heading-text"
+                    >Ride the Rokumon sightseeing train in Tomi, Nagano</a
+                  >
+                </div>
+                <div class="ticket-content">
+                  Sightseeing trains are a great mode of transport for
+                  traversing rural Japan if a long car ride isn’t your jam. Some
+                  trains are themed, and others, like the Rokumon train in Tomi
+                  City, Nagano Prefecture, also offer some food services to make
+                  your ride as comfortable as possible. This package includes
+                  two tickets for the Rokumon sightseeing train, one meal plan
+                  for two and a set of red and white wines to sip on while you
+                  take in the natural landscapes whooshing past the window.
+                </div>
+                <div class="ticket-price">From ¥118,000</div>
+              </div>
+            </div>
+            <div class="pick">
+              <div class="content">
+                <div class="pick-top">Our Top Picks For You</div>
+                <div class="grid">
+                  <div class="row">
+                    <div class="col l-4 m-12 c-12">
+                      <div class="pick-img">
+                        <img
+                          src="https://www.tokyoweekender.com/wp-content/uploads/2021/12/naebaski_0114.jpg"
+                          alt="skiing"
+                        />
+                        <div class="modal"></div>
+                      </div>
+                      <div class="pick-mid">
+                        <span class="pick-mid-text">Sports & Fitness </span>
+                        /
+                        <span class="pick-mid-text"> Travel</span>
+                      </div>
+                      <div class="pick-bottom">
+                        <div class="pick-bottom-text">
+                          Japan’s Top 7 Ski Resorts
+                        </div>
+                        <div class="pick-bottom-author">By Julian Ryall</div>
+                      </div>
+                    </div>
+                    <div class="col l-4 m-6 c-12">
+                      <div class="pick-img">
+                        <img
+                          src="	https://www.tokyoweekender.com/wp-content/uploads/2021/12/shutterstock_2024219063.jpg"
+                          alt="woman"
+                        />
+                        <div class="modal"></div>
+                      </div>
+                      <div class="pick-mid">
+                        <span class="pick-mid-text">Travel</span>
+                        /
+                        <span class="pick-mid-text">TW Collabs</span>
+                        /
+                        <span class="pick-mid-text">Video</span>
+                      </div>
+                      <div class="pick-bottom">
+                        <div class="pick-bottom-text">
+                          Softcream Adventures: Tasting Shizuoka’s Local
+                          Softcream Flavors
+                        </div>
+                        <div class="pick-bottom-author">
+                          By Weekender Editor
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col l-4 m-6 c-12">
+                      <div class="pick-img">
+                        <img
+                          src="https://www.tokyoweekender.com/wp-content/uploads/2021/11/shutterstock_2045376194.jpg"
+                          alt="Kansai"
+                        />
+                        <div class="modal"></div>
+                      </div>
+                      <div class="pick-mid">
+                        <span class="pick-mid-text">Food & Drink </span>
+                        /
+                        <span class="pick-mid-text">Kansai</span>
+                      </div>
+                      <div class="pick-bottom">
+                        <div class="pick-bottom-text">
+                          Japan Travel: 7 Cafés To Try in Kyoto
+                        </div>
+                        <div class="pick-bottom-author">By Samantha Low</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="body-right hide-on-mobile">
+          <div class="body-right-wrap">
+            <i class="far fa-share-square icon-share"></i>
+            <i class="fab fa-facebook icon-social"></i>
+            <i class="fab fa-twitter icon-social"></i>
+            <i class="fab fa-linkedin-in icon-social"></i>
+            <i class="fab fa-pinterest icon-social"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <div class="footer-container">
+        <div class="footer">
+          <div class="footer-top">
+            <div class="footer-logo">
+              <img
+                src="	https://www.tokyoweekender.com/wp-content/themes/thevoux-wp/assets/img/footer/footer-icon.svg"
+                alt=""
+              />
+            </div>
+            <div class="footer-connect">CONNECT WITH US</div>
+            <div class="footer-icon">
+              <i class="fab fa-facebook icon-social"></i>
+              <i class="fab fa-twitter icon-social"></i>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-linkedin-in icon-social"></i>
+              <i class="fab fa-pinterest icon-social"></i>
+            </div>
+            <div class="footer-copyright">
+              <div class="footer-copyright-top">
+                © 2020 - 2021 Tokyo Weekender
+              </div>
+              <div class="footer-copyright-bottom">
+                All rights reserved. Unauthorized reproduction prohibited.
+              </div>
+            </div>
+            <div class="footer-company">Powered by ENGAWA Co., Ltd.</div>
+          </div>
+          <div class="footer-bottom">
+            <div class="footer-bottom-container">
+              <span class="footer-bottom-text">ADVERTISE WITH US</span>
+              <span class="footer-bottom-text">ABOUT US</span>
+              <span class="footer-bottom-text">CONTACT US</span>
+              <span class="footer-bottom-text">SUBSCRIBE (定期購読)</span>
+              <span class="footer-bottom-text">PICK UP A COPY</span>
+              <span class="footer-bottom-text">PRIVACY POLICY</span>
+              <span class="footer-bottom-text">TERMS & CONDITIONS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
